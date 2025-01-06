@@ -1,10 +1,14 @@
-import React from 'react';
+import React from "react";
+import Footer from "../components/Footer";
+import Register from "../components/Register";
+import NewsLetter from "../components/NewsLetter";
 
 const Contact = () => {
   return (
     <div>
-      <h1>Welcome to My Website</h1>
-      <p>This is the Contact page.</p>
+      <Register />
+      <NewsLetter />
+      <Footer />
     </div>
   );
 };
