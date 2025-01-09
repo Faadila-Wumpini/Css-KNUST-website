@@ -7,7 +7,9 @@ const Services = () => {
   return (
     <div className="resources">
       <div className="landing-section">
-        <h1>Learning Materials</h1>
+        <div className="overlay">
+          <h1>Learning Materials</h1>
+        </div>
       </div>
       <LearnConnectGrow />
       <Footer />

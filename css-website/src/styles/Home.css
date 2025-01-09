@@ -9,7 +9,15 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* opacity: 0.8; */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(5, 5, 91, 0.589);
 }
 
 .nextEvent {
