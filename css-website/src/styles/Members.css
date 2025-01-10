@@ -30,6 +30,7 @@
   font-size: 65px;
   color: white;
   margin: auto;
+  text-align: center;
 }
 
 .executives h1 {
@@ -42,4 +43,24 @@
   grid-template-columns: repeat(3, minmax(0, 1fr));
   padding: 10px;
   gap: 40px;
+}
+
+@media (max-width: 480px) {
+  .members .top .overlay h1 {
+    font-size: 45px;
+  }
+
+  .executives .row {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .members .top .overlay h1 {
+    font-size: 55px;
+  }
+
+  .executives .row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }

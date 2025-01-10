@@ -71,8 +71,46 @@
   gap: 10px;
 }
 
-/* .eventImage {
-  object-fit: contain;
-  height: auto;
-  width: 1000px;
-} */
+@media (max-width: 480px) {
+  .design {
+    flex-direction: column-reverse;
+    width: 100%;
+    left: 0px;
+  }
+
+  .design .text {
+    width: 90%;
+  }
+
+  .calendarImage {
+    width: 90%;
+  }
+  .top {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+  .design {
+    flex-direction: column-reverse;
+    width: 100%;
+    left: 0px;
+  }
+
+  .design .text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .calendarImage {
+    width: 70%;
+  }
+
+  .event {
+    padding: 20px 0px;
+  }
+}

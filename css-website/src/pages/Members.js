@@ -16,12 +16,15 @@ const Members = () => {
           <Member />
           <Member />
           <Member />
-        </div>
-        <div className="row">
           <Member />
           <Member />
           <Member />
         </div>
+        {/* <div className="row">
+          <Member />
+          <Member />
+          <Member />
+        </div> */}
       </div>
 
       <Footer />

@@ -16,11 +16,6 @@
   color: black;
 }
 
-.slider button:hover {
-  opacity: 1;
-  transition: opacity 0.2s ease 0s;
-}
-
 .slider .slick-list {
   overflow: hidden;
 }
@@ -51,4 +46,44 @@
 .slider h1 {
   margin: 15px 0px;
   text-align: center;
+}
+
+@media (max-width: 480px) {
+  .slider {
+    width: 80%;
+    padding: 10px;
+  }
+
+  .slider button::before {
+    font-size: 15px;
+    color: black;
+  }
+
+  .slider .slick-prev {
+    left: -30px;
+  }
+
+  .slider .slick-next {
+    right: -30px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+  .slider {
+    width: 80%;
+    padding: 15px;
+  }
+
+  .slider button::before {
+    font-size: 20px;
+    color: black;
+  }
+
+  .slider .slick-prev {
+    left: -30px;
+  }
+
+  .slider .slick-next {
+    right: -30px;
+  }
 }
