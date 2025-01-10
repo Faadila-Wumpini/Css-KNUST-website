@@ -8,7 +8,6 @@ const Home = () => {
     <>
       <div className="home">
         <div className="overlay">
-          <div className="nextEvent"></div>
           <div className="writings">
             <div className="societyName">
               <h1>Computer Science</h1>

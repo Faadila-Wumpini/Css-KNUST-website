@@ -9,9 +9,14 @@
 }
 
 .header {
-  display: grid;
+  display: flex;
+  width: 100%;
   gap: 20px;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: start;
+}
+
+.header *:not(.cssLogo) {
+  flex: 1;
 }
 
 .footer .cssLogo {
@@ -32,6 +37,7 @@
 }
 
 .icons {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -46,8 +52,41 @@
 }
 
 .footer .bottom {
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   gap: 50px;
   padding: 20px 50px;
+}
+
+@media (max-width: 480px) {
+  .header {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .icons {
+    justify-content: center;
+  }
+
+  .footer .bottom {
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .header {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .icons {
+    justify-content: center;
+  }
+
+  .footer .bottom {
+    justify-content: center;
+    gap: 15px;
+  }
 }

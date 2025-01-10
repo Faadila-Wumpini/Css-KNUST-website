@@ -20,13 +20,6 @@
   background: rgba(5, 5, 91, 0.589);
 }
 
-.nextEvent {
-  height: 30px;
-  width: 100%;
-  background-color: rgba(74, 48, 243, 0.804);
-  z-index: 2;
-}
-
 .writings {
   width: 60%;
   display: flex;
@@ -46,6 +39,7 @@
 
 .societyName {
   display: flex;
+  width: 100%;
   flex-direction: column;
   gap: 50px;
 }
@@ -68,4 +62,24 @@
 
 .navbar a {
   color: white;
+}
+
+@media (max-width: 480px) {
+  .writings {
+    width: 100%;
+    left: 0px;
+  }
+
+  .writings .societyName h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 768px) {
+  .writings {
+    width: 100%;
+    left: 0px;
+    padding: 15px;
+  }
 }

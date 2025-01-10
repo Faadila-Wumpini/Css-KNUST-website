@@ -13,6 +13,10 @@ const App = () => {
   return (
     <Router>
       <div className="app">
+        <div className="nextEvent">
+          CSS Clinic Hub happening on Saturday, 21st January 2025. Click for
+          more
+        </div>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
