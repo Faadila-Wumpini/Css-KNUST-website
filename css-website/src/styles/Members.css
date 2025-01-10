@@ -16,10 +16,11 @@
   display: flex;
 }
 
-.overlay {
+.top .overlay {
   display: flex;
   position: absolute;
-  top: 0;
+  height: 100vh;
+  top: 34px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -62,5 +63,9 @@
 
   .executives .row {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .top .overlay {
+    top: 55px;
   }
 }

@@ -12,10 +12,11 @@
   display: flex;
 }
 
-.overlay {
+.landing-section .overlay {
   display: flex;
   position: absolute;
-  top: 0;
+  height: 100vh;
+  top: 34px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -38,5 +39,8 @@
 @media (max-width: 768px) {
   .landing-section .overlay h1 {
     font-size: 55px;
+  }
+  .landing-section .overlay {
+    top: 55px;
   }
 }
